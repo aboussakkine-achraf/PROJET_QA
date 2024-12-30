@@ -1,0 +1,63 @@
+
+Tcom.project.Plantes.Medicinales.responses.LoginResponse#toString()Ljava/lang/String;Å
+wC:/Users/essao/Plantes-Medicinales-back-main/src/main/java/com/project/Plantes/Medicinales/responses/LoginResponse.java ("1*€
+1 (g
+e
+ (
+%0java.lang.String"__concat*
+ (
+LoginResponse{*
+ (	
+token='è
+å
+ (!
+%1java.lang.String"__id*b
+
+__unknown_file (F*D9
+7com.project.Plantes.Medicinales.responses.LoginResponse"
+tokenz
+x
+ (!
+%2java.lang.String"__concat*$
+ (
+
+%0java.lang.String*$
+ (!
+
+%1java.lang.Stringh
+f
+ ((
+%3java.lang.String"__concat*$
+ (!
+
+%2java.lang.String*
+$ ((
+\'r
+p
+ (
+%4java.lang.String"__concat*$
+ ((
+
+%3java.lang.String*
+ (
+, expiresIn=h
+f
+ (*
+%5java.lang.String"__concat*$
+ (
+
+%4java.lang.String*
+! (*
+""g
+e
+ (
+%6java.lang.String"__concat*$
+ (*
+
+%5java.lang.String*
+ (
+}"$
+ (
+
+%6java.lang.StringB;9
+7com.project.Plantes.Medicinales.responses.LoginResponseH

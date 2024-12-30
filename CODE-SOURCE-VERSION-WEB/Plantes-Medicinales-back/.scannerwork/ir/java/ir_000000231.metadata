@@ -1,0 +1,8 @@
+com.project.Plantes.Medicinales.service.ArticleServiceTest#saveImage_shouldHandleIOException()V
+false
+c1cc0436ede7df23bc72826af2c979cb
+java.io.IOException#<init>(Ljava/lang/String;)V
+java.io.IOException#instance-init#
+java.lang.String#getBytes()[B
+==
+!unknownMethod! !unknownMethod!

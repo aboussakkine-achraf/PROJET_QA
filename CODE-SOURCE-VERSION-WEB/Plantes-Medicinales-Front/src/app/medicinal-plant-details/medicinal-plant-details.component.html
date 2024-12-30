@@ -1,0 +1,64 @@
+<mat-toolbar color="primary" class="navbar">
+  <span>Medical Plant Assistant</span>
+  <span class="spacer"></span>
+  <mat-icon (click)="toggleSidenav()">menu</mat-icon>
+</mat-toolbar>
+
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="side" [opened]="isSidenavOpened">
+    <mat-nav-list>
+      <a mat-list-item (click)="navigateToHome()">
+        <mat-icon>list</mat-icon> Liste des plantes
+      </a>
+      <a mat-list-item (click)="navigateToRecommendationForm()">
+        <mat-icon>star</mat-icon> Voir une recommandation
+      </a>
+      <a mat-list-item (click)="navigateToAddArticle()">
+        <mat-icon>add_circle</mat-icon> Ajouter un article
+      </a>
+      <a mat-list-item (click)="navigateToArticleList()">
+        <mat-icon>list</mat-icon> Liste des articles
+      </a>
+      <a mat-list-item (click)="navigateToAssistantForm()">
+        <mat-icon>smart_toy</mat-icon> Assistant AI
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+
+ 
+  <mat-sidenav-content>
+    <div class="search-container">
+      <mat-form-field appearance="outline" class="search-field">
+        <mat-label>Rechercher</mat-label>
+        <input matInput placeholder="Entrez un terme de recherche" [(ngModel)]="searchTerm" (input)="searchPlant()">
+        <button mat-icon-button matSuffix>
+          <mat-icon>search</mat-icon>
+        </button>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="search-select">
+        <mat-label>Rechercher par</mat-label>
+        <mat-select [(ngModel)]="searchType">
+          <mat-option value="nom">Nom</mat-option>
+          <mat-option value="proprietes">Propriétés</mat-option>
+          <mat-option value="utilisation">Utilisation</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div class="card-container">
+      <mat-card class="example-card" *ngFor="let plant of plants">
+        <img mat-card-image [src]="'http://localhost:8080' + plant.image" alt="{{ plant.nom }}" class="card-image">
+        <mat-card-header>
+          <mat-card-title class="card-title">{{ plant.nom }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-actions>
+          <button mat-button color="accent" (click)="openDialog(plant)">Details</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

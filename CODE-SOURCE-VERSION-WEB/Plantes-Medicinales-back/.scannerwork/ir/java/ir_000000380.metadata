@@ -1,0 +1,13 @@
+com.project.Plantes.Medicinales.service.AuthenticationService#signup(Lcom/project/Plantes/Medicinales/dtos/RegisterUserDto;)Lcom/project/Plantes/Medicinales/entities/User;
+false
+d769a3624d42e3ba35f52c2b383f7a82
+com.project.Plantes.Medicinales.entities.User#<init>()V
+com.project.Plantes.Medicinales.entities.User#instance-init#
+==
+!unknownMethod! !unknownMethod!
+getEmail com.project.Plantes.Medicinales.dtos.RegisterUserDto#getEmail()Ljava/lang/String;
+getFullName com.project.Plantes.Medicinales.dtos.RegisterUserDto#getFullName()Ljava/lang/String;
+getPassword com.project.Plantes.Medicinales.dtos.RegisterUserDto#getPassword()Ljava/lang/String;
+setEmail com.project.Plantes.Medicinales.entities.User#setEmail(Ljava/lang/String;)Lcom/project/Plantes/Medicinales/entities/User;
+setFullName com.project.Plantes.Medicinales.entities.User#setFullName(Ljava/lang/String;)Lcom/project/Plantes/Medicinales/entities/User;
+setPassword com.project.Plantes.Medicinales.entities.User#setPassword(Ljava/lang/String;)Lcom/project/Plantes/Medicinales/entities/User;

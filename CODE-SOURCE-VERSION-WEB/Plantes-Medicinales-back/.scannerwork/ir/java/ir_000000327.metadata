@@ -1,0 +1,6 @@
+com.project.Plantes.Medicinales.service.PlanteService#ajouterPlante(Lcom/project/Plantes/Medicinales/entities/Plante;LMultipartFile;)Lcom/project/Plantes/Medicinales/entities/Plante;
+false
+9a7647ab9c3235ded47369e44a257d7f
+com.project.Plantes.Medicinales.service.PlanteService#saveImage(LMultipartFile;)Ljava/lang/String;
+==
+!unknownMethod! !unknownMethod!

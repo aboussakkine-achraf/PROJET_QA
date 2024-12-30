@@ -1,0 +1,116 @@
+.navbar {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+.search-field {
+  width: 100%;
+  max-width: 400px;
+}
+
+
+
+.mat-form-field {
+  flex: 1;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.example-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.example-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mat-card-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.mat-button {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
+
+.mat-button:hover {
+  background-color: #45a049;
+}
+
+.example-container {
+  height: 100%;
+}
+mat-sidenav {
+  width: 250px;
+  background-color: #ffffff;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+/* Sidenav list styling */
+mat-nav-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+mat-nav-list a {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+}
+
+mat-nav-list a:hover {
+  background-color: #e0f7fa;
+}
+
+mat-nav-list mat-icon {
+  margin-right: 10px;
+}
+
+
+

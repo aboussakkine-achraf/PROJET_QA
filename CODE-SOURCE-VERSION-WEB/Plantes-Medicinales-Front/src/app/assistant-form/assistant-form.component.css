@@ -1,0 +1,132 @@
+/* For the sidenav content to take full height and width */
+mat-sidenav-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 64px); /* Full height minus toolbar */
+  width: 100%; /* Full width of the viewport */
+  background-color: #f4f4f9;
+  padding: 0;
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  box-sizing: border-box;
+}
+
+/* For the assistant container to fill the available space */
+.assistant-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 20px; /* Added padding for responsiveness */
+  box-sizing: border-box; /* Ensures the padding doesn't overflow */
+}
+
+/* Form styling */
+.assistant-form {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px; /* Adjust max width */
+  text-align: center;
+  overflow: auto;
+  margin: auto;
+}
+
+/* Input box styling */
+.input-box {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Chat bubbles styling */
+.chat-bubbles {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  max-height: 300px; /* Set a max height for the chat bubbles */
+}
+
+/* User and assistant message styling */
+.user-message,
+.assistant-response {
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+/* User message bubble style */
+.user-message {
+  align-self: flex-start;
+  background-color: #e0f7fa;
+  color: #00796b;
+}
+
+/* Assistant response bubble style */
+.assistant-response {
+  align-self: flex-end;
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #4caf50;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Sidenav container styling */
+.example-container {
+  height: 100vh; /* Ensure the sidenav takes the full height */
+  display: flex;
+  flex-direction: row;
+  margin-top: 64px; /* Ensure content is not hidden under the navbar */
+}
+
+/* Sidenav styling */
+mat-sidenav {
+  width: 250px;
+  background-color: #ffffff;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+/* Sidenav list styling */
+mat-nav-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+mat-nav-list a {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+}
+
+mat-nav-list a:hover {
+  background-color: #e0f7fa;
+}
+
+mat-nav-list mat-icon {
+  margin-right: 10px;
+}

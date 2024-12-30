@@ -1,0 +1,94 @@
+.navbar {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 5px;
+  }
+
+  mat-sidenav {
+    width: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+  
+  mat-nav-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  mat-list-item {
+    padding: 10px 20px;
+    white-space: nowrap;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  mat-list-item mat-icon {
+    margin-right: 10px; /* Space between icon and text */
+  }
+  
+  mat-list-item:hover {
+    background-color: #388E3C; /* Highlight color on hover */
+  }
+
+  .form-container {
+    margin-top: 20px; /* Espace entre le menu et le formulaire */
+  }
+
+  button {
+    background-color: green; /* Couleur de fond verte */
+    color: white; /* Texte en blanc pour une meilleure lisibilité */
+  }
+  label {
+    font-size: 1.1rem; 
+  }
+  

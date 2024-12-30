@@ -1,0 +1,12 @@
+com.project.Plantes.Medicinales.controller.AuthenticationController#authenticate(Lcom/project/Plantes/Medicinales/dtos/LoginUserDto;)LResponseEntity;
+false
+ba5764387bcb44b5ba042c96a1136c2c
+com.project.Plantes.Medicinales.responses.LoginResponse#<init>()V
+com.project.Plantes.Medicinales.responses.LoginResponse#instance-init#
+==
+!unknownMethod! !unknownMethod!
+authenticate com.project.Plantes.Medicinales.service.AuthenticationService#authenticate(Lcom/project/Plantes/Medicinales/dtos/LoginUserDto;)Lcom/project/Plantes/Medicinales/entities/User;
+generateToken com.project.Plantes.Medicinales.service.JwtService#generateToken(LUserDetails;)Ljava/lang/String;
+getExpirationTime com.project.Plantes.Medicinales.service.JwtService#getExpirationTime()J
+setExpiresIn com.project.Plantes.Medicinales.responses.LoginResponse#setExpiresIn(J)Lcom/project/Plantes/Medicinales/responses/LoginResponse;
+setToken com.project.Plantes.Medicinales.responses.LoginResponse#setToken(Ljava/lang/String;)Lcom/project/Plantes/Medicinales/responses/LoginResponse;

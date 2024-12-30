@@ -1,0 +1,32 @@
+<mat-toolbar color="primary" class="navbar">
+  <span>Recommended Plants</span>
+  <span class="spacer"></span>
+</mat-toolbar>
+
+<h2>Plants to Recommend</h2>
+<div class="card-container">
+  <mat-card class="example-card" *ngFor="let plant of plants">
+    <img mat-card-image [src]="'http://localhost:8080' + plant.image" alt="{{ plant.nom }}" class="card-image">
+    <mat-card-header>
+      <mat-card-title class="card-title">{{ plant.nom }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-actions>
+      <button mat-button color="accent" (click)="openDialog(plant)">Details</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<h2>Plants to Avoid</h2>
+<div class="card-container">
+  <mat-card class="example-card" *ngFor="let plant of plantsToAvoid">
+    <img mat-card-image [src]="'http://localhost:8080' + plant.image" alt="{{ plant.nom }}" class="card-image">
+    <mat-card-header>
+      <mat-card-title class="card-title">{{ plant.nom }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-actions>
+      <button mat-button color="accent" (click)="openDialog(plant)">Details</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<router-outlet></router-outlet>

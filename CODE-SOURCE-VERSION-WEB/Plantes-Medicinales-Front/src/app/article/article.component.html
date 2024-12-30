@@ -1,0 +1,53 @@
+<mat-toolbar color="primary" class="navbar">
+  <span>Medical Plant</span>
+  <span class="spacer"></span>
+  <mat-icon (click)="toggleSidenav()">menu</mat-icon>
+</mat-toolbar>
+
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="side" [opened]="isSidenavOpened">
+    <mat-nav-list>
+      <a mat-list-item (click)="navigateToHome()">
+        <mat-icon>list</mat-icon> Liste des plantes
+      </a>
+      <a mat-list-item (click)="navigateToRecommendationForm()">
+        <mat-icon>star</mat-icon> Voir une recommandation
+      </a>
+      <a mat-list-item (click)="navigateToAddArticle()">
+        <mat-icon>add_circle</mat-icon> Ajouter un article
+      </a>
+      <a mat-list-item (click)="navigateToArticleList()">
+        <mat-icon>list</mat-icon> Liste des articles
+      </a>
+      <a mat-list-item (click)="navigateToAssistantForm()">
+        <mat-icon>smart_toy</mat-icon> Assistant AI
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div *ngIf="articles.length === 0" class="no-articles">
+      <p>Aucun article disponible pour le moment.</p>
+    </div>
+
+    <div *ngIf="articles.length > 0">
+      <div class="article-list">
+        <div *ngFor="let article of articles" class="article-item">
+          <div>
+            <strong>Username: </strong>
+            <strong>{{ article.userFullName || 'Auteur inconnu' }}</strong>
+          </div>
+          <div>
+            <strong>Title: </strong>
+            <strong>{{ article.title }}</strong>
+          </div>
+          <div>
+            <strong>Date de Creation: </strong>
+            <strong>{{ article.createdAt }}</strong>
+          </div>
+          <button class="view-button" (click)="openDialog(article)">View</button>
+        </div>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

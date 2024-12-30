@@ -1,0 +1,6 @@
+com.project.Plantes.Medicinales.controller.AuthenticationController#register(Lcom/project/Plantes/Medicinales/dtos/RegisterUserDto;)LResponseEntity;
+false
+4ac36cfcdb08ac100ba6d31bcf664b83
+==
+!unknownMethod! !unknownMethod!
+signup com.project.Plantes.Medicinales.service.AuthenticationService#signup(Lcom/project/Plantes/Medicinales/dtos/RegisterUserDto;)Lcom/project/Plantes/Medicinales/entities/User;

@@ -1,0 +1,7 @@
+com.project.Plantes.Medicinales.selenium.AiAssistantTest#setUp()V
+false
+b05b371948fe68f599da441ee2cc8399
+java.lang.System#setProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+java.time.Duration#ofSeconds(J)Ljava/time/Duration;
+==
+!unknownMethod! !unknownMethod!

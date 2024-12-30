@@ -1,0 +1,8 @@
+com.project.Plantes.Medicinales.selenium.SearchTest#testSearchByUsage()V
+false
+0db1f233144972c84513224b332440cd
+java.lang.String#contains(Ljava/lang/CharSequence;)Z
+java.lang.String#toLowerCase()Ljava/lang/String;
+==
+!unknownMethod! !unknownMethod!
+println java.io.PrintStream#println(Ljava/lang/String;)V

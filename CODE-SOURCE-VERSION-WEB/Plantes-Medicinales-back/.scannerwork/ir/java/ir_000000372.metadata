@@ -1,0 +1,17 @@
+com.project.Plantes.Medicinales.controller.ArticleController#createArticle(Ljava/lang/String;Ljava/lang/String;LMultipartFile;)LResponseEntity;
+false
+a286a6dc524c9f4efc58a5abbfc06e79
+com.project.Plantes.Medicinales.entities.Article#<init>()V
+com.project.Plantes.Medicinales.entities.Article#instance-init#
+com.project.Plantes.Medicinales.responses.ArticleWithUserResponse#<init>(Lcom/project/Plantes/Medicinales/entities/Article;Lcom/project/Plantes/Medicinales/entities/User;)V
+com.project.Plantes.Medicinales.responses.ArticleWithUserResponse#instance-init#
+java.util.Optional#orElseThrow(Ljava/util/function/Supplier;)Ljava/lang/Object;
+==
+!unknownMethod! !unknownMethod!
+createArticle com.project.Plantes.Medicinales.service.ArticleService#createArticle(Lcom/project/Plantes/Medicinales/entities/Article;LMultipartFile;)Lcom/project/Plantes/Medicinales/entities/Article;
+findByEmail com.project.Plantes.Medicinales.repository.UserRepository#findByEmail(Ljava/lang/String;)Ljava/util/Optional;
+saveImage com.project.Plantes.Medicinales.service.ArticleService#saveImage(LMultipartFile;)Ljava/lang/String;
+setContent com.project.Plantes.Medicinales.entities.Article#setContent(Ljava/lang/String;)V
+setImage com.project.Plantes.Medicinales.entities.Article#setImage(Ljava/lang/String;)V
+setTitle com.project.Plantes.Medicinales.entities.Article#setTitle(Ljava/lang/String;)V
+setUser com.project.Plantes.Medicinales.entities.Article#setUser(Lcom/project/Plantes/Medicinales/entities/User;)V

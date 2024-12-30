@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>{{ plant.nom }}</h1>
+<div mat-dialog-content>
+  <img [src]="'http://localhost:8080' + plant.image" alt="{{ plant.nom }}" class="card-image">
+  <p><strong>Description:</strong> {{ plant.description }}</p>
+  <p><strong>Properties:</strong> {{ plant.proprietes }}</p>
+  <p><strong>Usage:</strong> {{ plant.utilisation }}</p>
+  <p><strong>Precaution:</strong> {{ plant.preaucaution }}</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</div>

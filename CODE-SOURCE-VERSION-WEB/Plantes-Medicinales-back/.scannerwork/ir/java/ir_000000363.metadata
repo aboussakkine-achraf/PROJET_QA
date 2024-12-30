@@ -1,0 +1,6 @@
+com.project.Plantes.Medicinales.controller.PlanteController#getAllPlantes()LResponseEntity;
+false
+63bf9804406cd938a3b1da71d65ffd55
+==
+!unknownMethod! !unknownMethod!
+afficherToutesLesPlantes com.project.Plantes.Medicinales.service.PlanteService#afficherToutesLesPlantes()Ljava/util/List;

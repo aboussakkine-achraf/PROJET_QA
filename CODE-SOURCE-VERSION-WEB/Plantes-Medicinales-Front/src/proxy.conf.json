@@ -1,0 +1,9 @@
+{
+    "/api": {
+      "target": "https://ai.google.dev",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug"
+    }
+  }
+  

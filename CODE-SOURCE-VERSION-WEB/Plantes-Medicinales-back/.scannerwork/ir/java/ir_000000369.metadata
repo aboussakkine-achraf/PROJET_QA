@@ -1,0 +1,7 @@
+com.project.Plantes.Medicinales.controller.PlanteController#recommenderPlantes(Ljava/lang/String;Ljava/lang/String;)LResponseEntity;
+false
+e2506fdcd04966ba4bae2b9810f04542
+==
+!unknownMethod! !unknownMethod!
+isEmpty java.util.Map#isEmpty()Z
+recommenderPlantes com.project.Plantes.Medicinales.service.PlanteService#recommenderPlantes(Ljava/lang/String;Ljava/lang/String;)Ljava/util/Map;

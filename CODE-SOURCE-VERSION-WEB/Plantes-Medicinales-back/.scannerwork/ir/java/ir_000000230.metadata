@@ -1,0 +1,8 @@
+com.project.Plantes.Medicinales.service.ArticleServiceTest#saveImage_shouldReturnCorrectImagePath()V
+false
+e2919c4fab6b278809746f6a5190be18
+java.lang.String#contains(Ljava/lang/CharSequence;)Z
+java.lang.String#getBytes()[B
+==
+!unknownMethod! !unknownMethod!
+saveImage com.project.Plantes.Medicinales.service.ArticleService#saveImage(LMultipartFile;)Ljava/lang/String;

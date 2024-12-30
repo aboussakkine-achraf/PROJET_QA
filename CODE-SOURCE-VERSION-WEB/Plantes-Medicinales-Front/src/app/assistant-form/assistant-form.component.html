@@ -1,0 +1,59 @@
+<mat-toolbar color="primary" class="navbar">
+  <span>Medical Plant Assistant</span>
+  <span class="spacer"></span>
+  <mat-icon (click)="toggleSidenav()">menu</mat-icon>
+</mat-toolbar>
+
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="side" [opened]="isSidenavOpened">
+    <mat-nav-list>
+      <a mat-list-item (click)="navigateToHome()">
+        <mat-icon>list</mat-icon> Liste des plantes
+      </a>
+      <a mat-list-item (click)="navigateToRecommendationForm()">
+        <mat-icon>star</mat-icon> Voir une recommandation
+      </a>
+      <a mat-list-item (click)="navigateToAddArticle()">
+        <mat-icon>add_circle</mat-icon> Ajouter un article
+      </a>
+      <a mat-list-item (click)="navigateToArticleList()">
+        <mat-icon>list</mat-icon> Liste des articles
+      </a>
+      <a mat-list-item (click)="navigateToAssistantForm()">
+        <mat-icon>smart_toy</mat-icon> Assistant AI
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="assistant-container">
+      <div class="assistant-form">
+        <h1>AI Assistant</h1>
+        <form (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="userQuestion">Ask your question:</label>
+            <input
+              id="userQuestion"
+              type="text"
+              [(ngModel)]="userQuestion"
+              name="userQuestion"
+              required
+              class="input-box"
+            />
+            <button type="submit" mat-raised-button color="primary">
+              Send
+            </button>
+          </div>
+        </form>
+        <div class="chat-bubbles" *ngIf="response">
+          <div class="user-message">
+            {{ userQuestion }}
+          </div>
+          <div class="assistant-response">
+            {{ response }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

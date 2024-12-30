@@ -1,0 +1,50 @@
+<div class="signup-container">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="text-center mb-4">Login</h2>
+        
+        <!-- Success Message -->
+        <div *ngIf="loginSuccess" class="alert alert-success text-center" role="alert">
+          Successfully Logged In!
+        </div>
+  
+        <form #loginForm="ngForm" (ngSubmit)="login()">
+          
+          <div class="form-group mb-3">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="Enter your email"
+              [(ngModel)]="credentials.email"
+              required
+            />
+          </div>
+          
+          <div class="form-group mb-3">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control"
+              placeholder="Enter your password"
+              [(ngModel)]="credentials.password"
+              required
+            />
+          </div>
+          
+          <button
+            type="submit"
+            class="btn btn-primary w-100"
+            [disabled]="loginForm.invalid"
+          >
+            Login
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  

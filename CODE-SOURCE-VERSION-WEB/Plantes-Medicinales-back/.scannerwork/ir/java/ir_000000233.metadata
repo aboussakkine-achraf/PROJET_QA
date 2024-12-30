@@ -1,0 +1,9 @@
+com.project.Plantes.Medicinales.service.ArticleServiceTest#getAllArticles_shouldReturnEmptyList()V
+false
+28b318b377c5388708f97c24a67c15c1
+java.util.ArrayList#<factory>()Ljava/util/ArrayList;
+java.util.ArrayList#instance-init#
+==
+!unknownMethod! !unknownMethod!
+getAllArticles com.project.Plantes.Medicinales.service.ArticleService#getAllArticles()Ljava/util/List;
+size java.util.List#size()I

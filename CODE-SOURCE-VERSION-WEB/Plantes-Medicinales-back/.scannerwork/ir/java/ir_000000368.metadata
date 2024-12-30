@@ -1,0 +1,6 @@
+com.project.Plantes.Medicinales.controller.PlanteController#supprimerPlante(Ljava/lang/Long;)LResponseEntity;
+false
+e28e3999642143c561cc1dc5c63704cc
+==
+!unknownMethod! !unknownMethod!
+supprimerPlante com.project.Plantes.Medicinales.service.PlanteService#supprimerPlante(Ljava/lang/Long;)V

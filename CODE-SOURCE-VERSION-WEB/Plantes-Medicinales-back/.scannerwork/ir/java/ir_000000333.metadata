@@ -1,0 +1,12 @@
+com.project.Plantes.Medicinales.service.PlanteService#recommenderPlantes(Ljava/lang/String;Ljava/lang/String;)Ljava/util/Map;
+false
+bc6d67244d854e22bf3455550ba46ec6
+java.util.HashMap#<init>()V
+java.util.HashMap#instance-init#
+java.util.stream.Collectors#toList()Ljava/util/stream/Collector;
+==
+collect java.util.stream.Stream#collect(Ljava/util/stream/Collector;)Ljava/lang/Object;
+filter java.util.stream.Stream#filter(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+findByProprietesContaining com.project.Plantes.Medicinales.repository.IDaoPlante#findByProprietesContaining(Ljava/lang/String;)Ljava/util/List;
+put java.util.Map#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+stream java.util.Collection#stream()Ljava/util/stream/Stream;

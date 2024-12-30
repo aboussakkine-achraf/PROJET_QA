@@ -1,0 +1,69 @@
+<div class="signup-container">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="text-center mb-4">Create an Account</h2>
+      
+      <!-- Success Message -->
+      <div *ngIf="registrationSuccess" class="alert alert-success text-center" role="alert">
+        Successfully registered!
+      </div>
+
+      <form #registerForm="ngForm" (ngSubmit)="onSubmit()">
+        <div class="form-group mb-3">
+          <label for="fullName">Full Name</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            class="form-control"
+            placeholder="Enter your full name"
+            [(ngModel)]="user.fullName"
+            required
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter your email"
+            [(ngModel)]="user.email"
+            required
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-control"
+            placeholder="Enter your password"
+            [(ngModel)]="user.password"
+            required
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label for="confirmPassword">Repeat Password</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            class="form-control"
+            placeholder="Confirm your password"
+            required
+          />
+        </div>
+        <button
+          type="submit"
+          class="btn btn-primary w-100"
+          [disabled]="registerForm.invalid"
+        >
+          Sign Up
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

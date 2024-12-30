@@ -1,0 +1,17 @@
+
+çcom.project.Plantes.Medicinales.responses.LoginResponse#setToken(Ljava/lang/String;)Lcom/project/Plantes/Medicinales/responses/LoginResponse;Å
+wC:/Users/essao/Plantes-Medicinales-back-main/src/main/java/com/project/Plantes/Medicinales/responses/LoginResponse.java (!"1*Î
+1 (í
+è
+ (D9
+7com.project.Plantes.Medicinales.responses.LoginResponse"
+token"__id*7
+
+__unknown_file (
+
+tokenjava.lang.String"G
+ (;9
+7com.project.Plantes.Medicinales.responses.LoginResponse:%
+" (.
+tokenjava.lang.StringB;9
+7com.project.Plantes.Medicinales.responses.LoginResponseH

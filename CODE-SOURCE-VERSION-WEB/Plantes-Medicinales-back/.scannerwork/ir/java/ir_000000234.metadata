@@ -1,0 +1,6 @@
+com.project.Plantes.Medicinales.service.ArticleServiceTest#deleteArticle_shouldCallDeleteById()V
+false
+dc3edfd36a70b9e6fb2e3309fd6a4295
+==
+!unknownMethod! !unknownMethod!
+deleteArticle com.project.Plantes.Medicinales.service.ArticleService#deleteArticle(Ljava/lang/Integer;)V

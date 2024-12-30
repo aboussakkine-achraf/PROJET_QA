@@ -1,0 +1,7 @@
+com.project.Plantes.Medicinales.service.ArticleService#createArticle(Lcom/project/Plantes/Medicinales/entities/Article;LMultipartFile;)Lcom/project/Plantes/Medicinales/entities/Article;
+false
+44e89bb171aa70f1322a0f1cdde2a13f
+==
+!unknownMethod! !unknownMethod!
+saveImage com.project.Plantes.Medicinales.service.ArticleService#saveImage(LMultipartFile;)Ljava/lang/String;
+setImage com.project.Plantes.Medicinales.entities.Article#setImage(Ljava/lang/String;)V

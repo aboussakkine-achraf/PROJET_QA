@@ -1,0 +1,7 @@
+com.project.Plantes.Medicinales.controller.PlanteController#rechercheParUtilisation(Ljava/lang/String;)LResponseEntity;
+false
+a645f424108d3e3d1e6d6cf3d3e22ff1
+==
+!unknownMethod! !unknownMethod!
+isEmpty java.util.List#isEmpty()Z
+rechercheParUtilisation com.project.Plantes.Medicinales.service.PlanteService#rechercheParUtilisation(Ljava/lang/String;)Ljava/util/List;

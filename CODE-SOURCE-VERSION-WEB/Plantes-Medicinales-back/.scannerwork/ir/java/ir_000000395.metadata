@@ -1,0 +1,7 @@
+com.project.Plantes.Medicinales.exceptions.GlobalExceptionHandler#handleSecurityException(Ljava/lang/Exception;)LProblemDetail;
+false
+80c82f35db1dbef220f57ed468e72a11
+==
+!unknownMethod! !unknownMethod!
+getMessage java.lang.Throwable#getMessage()Ljava/lang/String;
+printStackTrace java.lang.Throwable#printStackTrace()V

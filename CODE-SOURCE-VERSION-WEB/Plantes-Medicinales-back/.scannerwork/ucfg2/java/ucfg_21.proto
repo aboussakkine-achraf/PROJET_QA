@@ -1,0 +1,15 @@
+
+zcom.project.Plantes.Medicinales.responses.ArticleWithUserResponse#getUser()Lcom/project/Plantes/Medicinales/entities/User;å
+ÅC:/Users/essao/Plantes-Medicinales-back-main/src/main/java/com/project/Plantes/Medicinales/responses/ArticleWithUserResponse.java ("1*à
+1 (µ
+≤
+ (3
+%0-com.project.Plantes.Medicinales.entities.User"__id*k
+
+__unknown_file (O*MC
+Acom.project.Plantes.Medicinales.responses.ArticleWithUserResponse"
+user"A
+ (5
+3
+%0-com.project.Plantes.Medicinales.entities.UserBEC
+Acom.project.Plantes.Medicinales.responses.ArticleWithUserResponseH

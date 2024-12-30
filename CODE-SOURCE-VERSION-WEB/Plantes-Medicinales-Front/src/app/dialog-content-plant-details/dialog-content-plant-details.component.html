@@ -1,0 +1,35 @@
+<mat-dialog-content class="mat-typography">
+  <h2 mat-dialog-title>{{ data.nom }}</h2>
+  <img [src]="'http://localhost:8080' + data.image" 
+       alt="{{ data.nom }}" 
+       style="width: 150px; height: 150px; object-fit: cover;" />
+
+  <h2 mat-dialog-title>Description</h2>
+  <p>{{ data.description }}</p>
+
+  <h2 mat-dialog-title>Propriétés</h2>
+  <p>{{ data.proprietes }}</p>
+
+  <h2 mat-dialog-title>Utilisation</h2>
+  <p>{{ data.utilisation }}</p>
+
+  <h2 mat-dialog-title>Précautions</h2>
+  <p>{{ data.preaucaution }}</p>
+
+  <!-- Afficher les commentaires -->
+  <h2 mat-dialog-title>Commentaires</h2>
+  <div class="comment-container" *ngFor="let comment of comments">
+    <p><strong>{{ comment.userFullName }}</strong>: {{ comment.content }}</p>
+  </div>
+
+  <!-- Input field for the message -->
+  <mat-form-field appearance="fill">
+    <mat-label>Enter your message</mat-label>
+    <textarea matInput [(ngModel)]="message"></textarea>
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button (click)="sendMessage()" cdkFocusInitial>Send</button>
+</mat-dialog-actions>

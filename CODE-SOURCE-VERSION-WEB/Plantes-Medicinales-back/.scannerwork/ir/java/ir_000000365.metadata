@@ -1,0 +1,7 @@
+com.project.Plantes.Medicinales.controller.PlanteController#rechercheParProprietes(Ljava/lang/String;)LResponseEntity;
+false
+f3d3a222dd7eed186536153dfa487cd9
+==
+!unknownMethod! !unknownMethod!
+isEmpty java.util.List#isEmpty()Z
+rechercheParPropriete com.project.Plantes.Medicinales.service.PlanteService#rechercheParPropriete(Ljava/lang/String;)Ljava/util/List;

@@ -1,0 +1,31 @@
+
+Wcom.project.Plantes.Medicinales.service.ArticleService#getAllArticles()Ljava/util/List;€
+vC:/Users/essao/Plantes-Medicinales-back-main/src/main/java/com/project/Plantes/Medicinales/service/ArticleService.java) )('"1*“
+1*! *(2<:
+*% *(0
+%0java.util.ArrayList"java.util.ArrayListj
+h
+*! *(2
+%1"java.util.ArrayList#<init>()V*7
+
+__unknown_file (
+
+%0java.util.ArrayListg
+e
+* *(3
+articlesjava.util.List"__id*7
+
+__unknown_file (
+
+%0java.util.ArrayListÆ
+Ã
++ +(B
+%2<com.project.Plantes.Medicinales.repository.ArticleRepository"__id*m
+
+__unknown_file (Q*O8
+6com.project.Plantes.Medicinales.service.ArticleService"
+articleRepository"(
+, ,(
+
+articlesjava.util.ListB:8
+6com.project.Plantes.Medicinales.service.ArticleServiceH

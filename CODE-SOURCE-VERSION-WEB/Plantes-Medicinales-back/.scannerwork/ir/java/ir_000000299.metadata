@@ -1,0 +1,6 @@
+com.project.Plantes.Medicinales.config.SecurityConfiguration#securityFilterChain(LHttpSecurity;)LSecurityFilterChain;
+false
+3f9aa5cc38161a7cdb98fee67076f922
+==
+!unknownMethod! !unknownMethod!
+corsConfigurationSource com.project.Plantes.Medicinales.config.SecurityConfiguration#corsConfigurationSource()LCorsConfigurationSource;

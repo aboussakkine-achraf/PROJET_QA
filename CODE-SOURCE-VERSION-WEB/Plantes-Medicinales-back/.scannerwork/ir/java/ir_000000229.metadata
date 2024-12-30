@@ -1,0 +1,12 @@
+com.project.Plantes.Medicinales.service.ArticleServiceTest#createArticle_shouldSaveArticleWithoutImage()V
+false
+9f7bc849ffd3a99d15e7d23c18270cd1
+com.project.Plantes.Medicinales.entities.Article#<init>()V
+com.project.Plantes.Medicinales.entities.Article#instance-init#
+==
+!unknownMethod! !unknownMethod!
+createArticle com.project.Plantes.Medicinales.service.ArticleService#createArticle(Lcom/project/Plantes/Medicinales/entities/Article;LMultipartFile;)Lcom/project/Plantes/Medicinales/entities/Article;
+getContent com.project.Plantes.Medicinales.entities.Article#getContent()Ljava/lang/String;
+getTitle com.project.Plantes.Medicinales.entities.Article#getTitle()Ljava/lang/String;
+setContent com.project.Plantes.Medicinales.entities.Article#setContent(Ljava/lang/String;)V
+setTitle com.project.Plantes.Medicinales.entities.Article#setTitle(Ljava/lang/String;)V

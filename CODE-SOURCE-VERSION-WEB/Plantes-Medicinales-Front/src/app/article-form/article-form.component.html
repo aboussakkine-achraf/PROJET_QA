@@ -1,0 +1,74 @@
+<mat-toolbar color="primary" class="navbar">
+  <span>Medical Plant</span>
+  <span class="spacer"></span>
+  <mat-icon (click)="toggleSidenav()">menu</mat-icon>
+</mat-toolbar>
+
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="side" [opened]="isSidenavOpened">
+    <mat-nav-list>
+      <a mat-list-item (click)="navigateToHome()">
+        <mat-icon>list</mat-icon> Liste des plantes
+      </a>
+      <a mat-list-item (click)="navigateToRecommendationForm()">
+        <mat-icon>star</mat-icon> Voir une recommandation
+      </a>
+      <a mat-list-item (click)="navigateToAddArticle()">
+        <mat-icon>add_circle</mat-icon> Ajouter un article
+      </a>
+      <a mat-list-item (click)="navigateToArticleList()">
+        <mat-icon>list</mat-icon> Liste des articles
+      </a>
+      <a mat-list-item (click)="navigateToAssistantForm()">
+        <mat-icon>smart_toy</mat-icon> Assistant AI
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+
+  <mat-sidenav-content>
+    <div class="article-form">
+      <h2>Create New Article</h2>
+      <form (ngSubmit)="submitArticle()" class="form-container">
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Title</mat-label>
+          <input
+            matInput
+            id="title"
+            type="text"
+            [(ngModel)]="title"
+            name="title"
+            placeholder="Enter article title"
+            required
+          />
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Content</mat-label>
+          <textarea
+            matInput
+            id="content"
+            [(ngModel)]="content"
+            name="content"
+            placeholder="Enter article content"
+            required
+          ></textarea>
+        </mat-form-field>
+
+        <div class="form-field">
+          <label for="image">Upload Image:</label>
+          <input
+            type="file"
+            id="image"
+            (change)="onFileChange($event)"
+            class="image-input"
+          />
+        </div>
+
+        <button mat-raised-button color="primary" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

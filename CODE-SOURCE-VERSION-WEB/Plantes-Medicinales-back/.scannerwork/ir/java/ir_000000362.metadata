@@ -1,0 +1,5 @@
+com.project.Plantes.Medicinales.controller.PlanteController#afficherToutesLesPlantes()Ljava/util/List;
+false
+d705fd1bcca27c15ec043edc315f84ff
+==
+afficherToutesLesPlantes com.project.Plantes.Medicinales.service.PlanteService#afficherToutesLesPlantes()Ljava/util/List;

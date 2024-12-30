@@ -1,0 +1,20 @@
+<mat-dialog-content class="mat-typography">
+    <h2 mat-dialog-title>{{ article.userFullName }}</h2>
+    <h2 mat-dialog-title>Title</h2>
+    <p>{{ article.title }}</p>
+    <!-- Display plant name -->
+    <img [src]="'http://localhost:8080' +  article.image" 
+         alt="{{ article.title}}" 
+         style="width: 150px; height: 150px; object-fit: cover;" /> <!-- Display plant image with 150x150 px size -->
+  
+    <h2 mat-dialog-title>Description</h2>
+    <p>{{ article.content }}</p>
+  
+   
+  </mat-dialog-content>
+  
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+  </mat-dialog-actions>
+  

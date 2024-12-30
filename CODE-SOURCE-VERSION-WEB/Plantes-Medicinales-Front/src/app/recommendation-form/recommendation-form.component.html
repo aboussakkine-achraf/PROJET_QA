@@ -1,0 +1,60 @@
+<mat-toolbar color="primary" class="navbar">
+  <span>Medical Plant</span>
+  <span class="spacer"></span>
+  <mat-icon (click)="toggleSidenav()">menu</mat-icon>
+</mat-toolbar>
+
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="side" [opened]="isSidenavOpened">
+    <mat-nav-list>
+      <a mat-list-item (click)="navigateToHome()">
+        <mat-icon>list</mat-icon> Liste des plantes
+      </a>
+      <a mat-list-item (click)="navigateToRecommendationForm()">
+        <mat-icon>star</mat-icon> Voir une recommandation
+      </a>
+      <a mat-list-item (click)="navigateToAddArticle()">
+        <mat-icon>add_circle</mat-icon> Ajouter un article
+      </a>
+      <a mat-list-item (click)="navigateToArticleList()">
+        <mat-icon>list</mat-icon> Liste des articles
+      </a>
+      <a mat-list-item (click)="navigateToAssistantForm()">
+        <mat-icon>smart_toy</mat-icon> Assistant AI
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+<div class="form-container">
+  <form [formGroup]="recommendationForm" (ngSubmit)="onSubmit()">
+    <!-- Besoins spécifiques -->
+    <div class="form-group">
+      <label for="properties">Avez-vous des besoins de santé particuliers ou des préoccupations spécifiques ?</label>
+      <input id="properties" formControlName="properties" type="text" class="form-control" />
+      <div *ngIf="recommendationForm.controls['properties'].invalid && recommendationForm.controls['properties'].touched" class="error">
+        Ce champ est requis.
+      </div>
+    </div>
+
+    <!-- Antécédents médicaux -->
+    <div class="form-group">
+      <label for="medicalHistory">Avez-vous des antécédents de maladies chroniques ou des conditions médicales spécifiques ?</label>
+      <input id="medicalHistory" formControlName="medicalHistory" type="text" class="form-control" />
+      <div *ngIf="recommendationForm.controls['medicalHistory'].invalid && recommendationForm.controls['medicalHistory'].touched" class="error">
+        Ce champ est requis.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="medicalHistory">Avez-vous déjà utilisé des plantes médicinales pour traiter des symptômes spécifiques ?</label>
+      <input  type="text" class="form-control" />
+    </div>
+
+    <div class="form-group">
+      <label for="medicalHistory">Souhaitez-vous recevoir des recommandations de plantes médicinales en fonction de vos symptômes actuels ?</label>
+      <input  type="text" class="form-control" />
+    </div>
+
+    <button type="submit" [disabled]="recommendationForm.invalid">Submit</button>
+  </form>
+</div>

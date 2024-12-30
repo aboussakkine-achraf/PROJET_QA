@@ -1,0 +1,5 @@
+com.project.Plantes.Medicinales.service.PlanteService#rechercheParPreaucaution(Ljava/lang/String;)Ljava/util/List;
+false
+cf11fa508bcb8e4a18cd6de5d384d9a0
+==
+findByPreaucautionContaining com.project.Plantes.Medicinales.repository.IDaoPlante#findByPreaucautionContaining(Ljava/lang/String;)Ljava/util/List;
